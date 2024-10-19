@@ -20,16 +20,21 @@ a {
 li {
   list-style-type: none;
 }
-
+main {
+  padding: 2rem 0;
+ 
+  
+}
 /* Estrutura principal */
 .container {
   width: 100%;
+
   background-color: #222;
+  
 }
 .content {
   margin: 0 auto;
   max-width: 1170px;
-  
 }
 
 
@@ -79,6 +84,8 @@ li {
   align-items: center;
 }
 .section-title h1 {
+  width: 100%;
+
   color: #fff;
   font-size: 3rem;
 }
@@ -137,15 +144,228 @@ li {
     transform: translateY(-10px); /* Movimenta para cima */
   }
 }
+
+/* Estilos para o Sobre me */
+.sobreContainer {
+  width: 100%;
+  height: auto;
+ 
+}
+.sobreContent {
+  display: flex;
+}
+.sobreContent .info {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+  justify-content: flex-start;
+}
+.sobreContent .info h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+.sobreContent .info h1 {
+
+  color: #fff;
+  font-size: 2rem;
+}
+
+.sobreContent .info p {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.sobreContent .info h5 {
+  color: #fff;
+  font-size: 1rem;
+}
+
+
+
+
+
+
+
+.sobreContainer .sobreImg {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sobreContainer .sobreImg img {
+  border-radius: 100%;
+  width: 30%; 
+}
+.projetoContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  overflow-wrap: break-word; /* Garante a quebra de palavras grandes */
+  color: #fff /* Centraliza o título */
+}
+.card img {
+  border-radius: 10px;
+}
+.card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #fff /* Centraliza o título */
+}
+.projetoContainer h1 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  overflow-wrap: break-word; /* Garante a quebra de palavras grandes */
+  margin-left: 15px;
+  color: #fff /* Centraliza o título */
+}
+
+footer {
+  background-color: #333; /* Cor de fundo do rodapé */
+  color: #fff; /* Cor do texto */
+  padding: 20px 0; /* Espaçamento interno */
+}
+
+.footerContent {
+  max-width: 1170px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  text-align: center; /* Centraliza o texto */
+}
+
+.socialMedia {
+  display: flex; /* Flexbox para os ícones de mídia social */
+  justify-content: center; /* Centraliza os ícones */
+  gap: 20px; /* Espaçamento entre os ícones */
+  margin-bottom: 10px; /* Espaço abaixo da linha de ícones */
+}
+
+.socialMedia a {
+  color: #fff; /* Cor dos ícones */
+  font-size: 24px; /* Tamanho dos ícones */
+  transition: color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+footer {
+  background-color: #333; /* Cor de fundo do rodapé */
+  color: #fff; /* Cor do texto */
+  padding: 20px 0; /* Espaçamento interno */
+}
+
+.footerContent {
+  max-width: 1170px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  text-align: center; /* Centraliza o texto */
+}
+
+.socialMedia {
+  display: flex; /* Flexbox para os ícones de mídia social */
+  justify-content: center; /* Centraliza os ícones */
+  gap: 20px; /* Espaçamento entre os ícones */
+  margin-bottom: 10px; /* Espaço abaixo da linha de ícones */
+}
+
+.socialMedia a {
+  color: #fff; /* Cor dos ícones */
+  font-size: 24px; /* Tamanho dos ícones */
+  transition: color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+.socialMedia a:hover {
+  color: #ff6347; /* Cor dos ícones ao passar o mouse */
+}
+
+footer p {
+  margin: 0; /* Remove margens do parágrafo */
+  font-size: 14px; /* Tamanho da fonte */
+}
+
+aside {
+  background-color: #222; /* Cor de fundo do aside */
+  color: #fff; /* Cor do texto */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  max-width: 400px; /* Largura máxima do aside */
+  margin: 20px auto; /* Centraliza o aside */
+}
+
+.contactForm {
+  display: flex; /* Flexbox para layout do formulário */
+  flex-direction: column; /* Direção em coluna */
+  gap: 15px; /* Espaçamento entre os campos do formulário */
+}
+
+.formGroup {
+  display: flex; /* Flexbox para cada grupo de formulário */
+  flex-direction: column; /* Direção em coluna */
+}
+
+label {
+  margin-bottom: 5px; /* Espaçamento abaixo do rótulo */
+  font-size: 1rem; /* Tamanho do texto do rótulo */
+}
+
+input,
+textarea {
+  padding: 10px; /* Espaçamento interno */
+  border: 1px solid #555; /* Borda do campo */
+  border-radius: 4px; /* Bordas arredondadas */
+  background-color: #444; /* Cor de fundo do campo */
+  color: #fff; /* Cor do texto do campo */
+  font-size: 1rem; /* Tamanho da fonte */
+}
+
+input:focus,
+textarea:focus {
+  border-color: #ff6347; /* Cor da borda ao focar */
+  outline: none; /* Remove o contorno padrão */
+}
+
+button {
+  padding: 10px; /* Espaçamento interno do botão */
+  background-color: #555; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  border: none; /* Remove borda do botão */
+  border-radius: 4px; /* Bordas arredondadas */
+  font-size: 1rem; /* Tamanho da fonte */
+  cursor: pointer; /* Muda o cursor ao passar o mouse */
+  transition: background-color 0.3s ease; /* Transição suave para mudança de cor */
+}
+
+button:hover {
+  background-color: #ff6347; /* Cor de fundo ao passar o mouse */
+}
+
 /* Estilos para o mobile */
 @media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    height: auto;
+    background-color: #222;
+  }
 
   header {
     display: flex;
     align-items: center;
-    justify-content: space-between;  
+    justify-content: space-between;
+    padding: 10px; /* Adiciona padding para melhorar a estética */
   }
-
 
   .headerLeft {
     width: 100%;
@@ -163,12 +383,11 @@ li {
     padding: 20px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    
   }
 
   .headerRight nav ul li {
     text-align: left;
-    margin: 10px;
+    margin: 10px 0; /* Melhorar o espaçamento entre os itens */
   }
 
   /* Botão de menu (hamburger) visível no mobile */
@@ -177,74 +396,193 @@ li {
     font-size: 24px;
     color: #fff;
     cursor: pointer;
+    padding: 10px; /* Melhora a área clicável */
   }
 
   /* Quando o menu está aberto */
   .menu-open nav ul {
     display: flex;
-    
     margin-top: 5%;
-    
-    
+    animation: fadeIn 0.3s; /* Adiciona uma animação de entrada */
   }
-  .Btn-Mobile button  i{
+
+  .Btn-Mobile button i {
     font-size: 1.5rem;
     color: #fff;
   }
-  .heroContainer {
-    display:  flex;
-    flex-direction: column-reverse;
 
+  .heroContainer {
+    display: flex;
+    flex-direction: column-reverse;
     padding: 20px;
   }
+
   .section-title h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     margin-top: 10px;
     overflow-wrap: break-word; /* Garante a quebra de palavras grandes */
-}
+    text-align: center; /* Centraliza o título */
+  }
+
   .section-title h2 {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    text-align: center; /* Centraliza o subtítulo */
   }
+
   .section-img {
     width: 100%;
     max-width: 300px; /* Defina um tamanho máximo para a imagem */
     margin: 0 auto; /* Centraliza a imagem horizontalmente */
   }
-  
+
   .section-img img {
     border-radius: 50%; /* Para deixar a imagem circular */
-    width: 100%; /* A largura da imagem será 100% do contêiner pai */
-    height: auto; /* Para manter a proporção da imagem */
+    width: 100%; /* Ajusta a largura da imagem para ocupar 100% do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
     max-width: 100%; /* Garante que a imagem não exceda o tamanho do contêiner pai */
   }
+
   .iconeArea {
     width: 100%;
-    
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap; /* Permite que os ícones se movam para a linha seguinte */
   }
+
   .btnArea {
-   width: 100%;
-  
-   display: flex;
-   justify-content: space-around;
-   flex-direction: column;
-    gap: 3rem;
-  align-items: center;
-  padding: 10px;
-  margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    flex-direction: column;
+    gap: 1rem; /* Reduz o espaçamento entre os botões */
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
   }
+
   .btnArea a {
     background-color: #555;
+    width: 90%; /* Define uma largura fixa para os botões */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px; /* Aumenta o padding para um botão mais "clicável" */
+    color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona transições suaves */
+  }
+
+  .btnArea a:hover {
+    background-color: #000; /* Muda a cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o tamanho do botão suavemente */
+  }
+
+  .sobreContent {
+    display: flex;
+    flex-direction: column; /* Muda para coluna em dispositivos móveis */
+    align-items: center; /* Centraliza os itens */
+    padding: 20px; /* Adiciona padding para melhorar a estética */
+  }
+
+  .sobreContent .info {
+    width: 90%; /* Largura total para o texto, mas com margens */
+    padding: 10px; /* Reduz o preenchimento para dispositivos móveis */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .sobreContainer .sobreImg {
+    width: 90%; /* Largura total para a imagem */
+    padding: 10px; /* Reduz o preenchimento para dispositivos móveis */
+    display: flex;
+    justify-content: center; /* Centraliza a imagem */
+  }
+
+  .sobreContainer .sobreImg img {
+    width: 60%; /* Ajusta a largura da imagem */
+    height: auto; /* Mantém a proporção */
+    max-width: 100%; /* Garante que a imagem não exceda o tamanho do contêiner pai */
+  }
+
+  /* Animação para o menu */
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Começa invisível */
+    }
+    to {
+      opacity: 1; /* Termina visível */
+    }
+  }
+  .projetoContainer {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    color: #fff;
+    
+  
+  }
+  .projetoContainer h1 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    overflow-wrap: break-word; /* Garante a quebra de palavras grandes */
+    margin-left: 15px;
+    color: #fff /* Centraliza o título */
+  }
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    overflow-wrap: break-word; /* Garante a quebra de palavras grandes */
+    color: #fff /* Centraliza o título */
+  }
+  .card img {
     border-radius: 10px;
   }
+  .card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #fff /* Centraliza o título */
+  }
+  .footerContent {
+    padding: 10px; /* Adiciona um pouco de espaço ao redor no mobile */
+  }
+
+  .socialMedia {
+    flex-direction: row; /* Mantém na linha até telas pequenas */
+    flex-wrap: wrap; /* Permite que os ícones quebrem para a linha seguinte, se necessário */
+    justify-content: center; /* Mantém os ícones centralizados */
+    gap: 15px; /* Reduz o espaçamento entre os ícones */
+  }
+
+  .socialMedia a {
+    font-size: 20px; /* Tamanho dos ícones reduzido em dispositivos menores */
+  }
+
+  footer p {
+    font-size: 12px; /* Tamanho da fonte reduzido em dispositivos menores */
+    margin-top: 5px; /* Espaçamento acima do texto */
+  }
+  aside {
+    padding: 15px; /* Reduz o padding no mobile */
+  }
+
+  input,
+  textarea {
+    font-size: 0.9rem; /* Reduz o tamanho da fonte no mobile */
+  }
+
+  button {
+    font-size: 0.9rem; /* Reduz o tamanho da fonte do botão no mobile */
+  }
 }
+
