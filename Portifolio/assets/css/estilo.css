@@ -1,0 +1,250 @@
+/* Estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  outline: none;
+}
+button {
+  border: none;
+  background-color: transparent;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Estrutura principal */
+.container {
+  width: 100%;
+  background-color: #222;
+}
+.content {
+  margin: 0 auto;
+  max-width: 1170px;
+  
+}
+
+
+/* Estilos do cabeçalho */
+.header {
+  width: 100%;
+  background-color: #333;
+  padding: 0.5rem;
+}
+.headerContent {
+  max-width: 1197px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.headerContainer {
+  background-color: #333;
+}
+.headerLeft h1 {
+  color: #fff;
+}
+
+.Btn-Mobile {
+  display: none; /* Escondido no desktop */
+}
+
+.headerRight nav ul {
+  display: flex;
+  gap: 1rem;
+}
+.headerRight nav ul li a{
+  color: #fff;
+}
+
+/* main / Section hero */
+.heroContainer {
+  width: 100%;
+  margin-top: 5%;
+  padding-bottom: 5%;
+  background-image: url(hero.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-title h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+.section-title h2 {
+
+  color: #fff;
+  font-size: 1.5rem;
+}
+.section-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  
+
+}
+.section-img img {
+  border-radius: 100%;
+  width: 50%;
+}
+.iconeArea {
+  width: 100%;
+  display: flex;
+  gap: 5%;
+  padding: 10px;
+}
+.btnArea {
+  width: 60%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  
+  gap: 20px
+}
+.btnArea a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  background-color: #555;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: background-color 0.3s ease; 
+}
+.btnArea a:hover {
+  background-color: #000; /* Muda a cor de fundo */
+  animation: bounce 0.5s ease; /* Aplica a animação no hover */
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Posição inicial e final */
+  }
+  50% {
+    transform: translateY(-10px); /* Movimenta para cima */
+  }
+}
+/* Estilos para o mobile */
+@media screen and (max-width: 768px) {
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+  }
+
+
+  .headerLeft {
+    width: 100%;
+  }
+
+  /* Esconde o menu no mobile por padrão */
+  .headerRight nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100vw;
+    background-color: #333;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+  }
+
+  .headerRight nav ul li {
+    text-align: left;
+    margin: 10px;
+  }
+
+  /* Botão de menu (hamburger) visível no mobile */
+  .Btn-Mobile {
+    display: block;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* Quando o menu está aberto */
+  .menu-open nav ul {
+    display: flex;
+    
+    margin-top: 5%;
+    
+    
+  }
+  .Btn-Mobile button  i{
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  .heroContainer {
+    display:  flex;
+    flex-direction: column-reverse;
+
+    padding: 20px;
+  }
+  .section-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    overflow-wrap: break-word; /* Garante a quebra de palavras grandes */
+}
+  .section-title h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  .section-img {
+    width: 100%;
+    max-width: 300px; /* Defina um tamanho máximo para a imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  }
+  
+  .section-img img {
+    border-radius: 50%; /* Para deixar a imagem circular */
+    width: 100%; /* A largura da imagem será 100% do contêiner pai */
+    height: auto; /* Para manter a proporção da imagem */
+    max-width: 100%; /* Garante que a imagem não exceda o tamanho do contêiner pai */
+  }
+  .iconeArea {
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btnArea {
+   width: 100%;
+  
+   display: flex;
+   justify-content: space-around;
+   flex-direction: column;
+    gap: 3rem;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+  }
+  .btnArea a {
+    background-color: #555;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+  }
+}
